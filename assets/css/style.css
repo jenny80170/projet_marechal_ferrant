@@ -1,0 +1,144 @@
+/*Propriété pour ne pas modifier la largeur de la page*/
+body {
+    overflow-x: hidden;
+}
+/*Paramétres pour l'éntête*/
+.parameterHeader {
+    font-size: 40px;
+    border-radius: 10px;
+}
+/*Paramétres pour la barre de navigation*/
+.parameterNavbar {
+    font-size: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(chocolate, Silver, tan);
+}
+/*Paramétres pour les boutons de la barre de navigation*/
+.parameterButtonNav {
+    color: black;
+    background-color: grey;
+}
+/*Paramétre pour la taille de l'icone maps*/
+.iconMaps {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+/*Paramétres pour le bouton icone maps*/
+.btnGeolocation {
+    display: block;
+    background-color: inherit;
+    border: none;
+}
+/*Paramétres pour le smiley content*/
+.parameterSmileyHappy {
+    font-size: 3rem;
+    color: yellow;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+/*Paramétres pour le smiley en colére*/
+.parameterSmileyAngry {
+    font-size: 3rem;
+    color: red;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+/*Paramétre pour la couleur du titre h1*/
+h1 {
+    color: peru;
+    margin-left: 190px;
+}
+.parameterP, ul{
+    font-size: 20px;
+    color: chocolate;
+    margin-right: 150px;
+}
+/*Paramétres image carte de visite*/
+.parameterImg {
+    margin-right: 150px;
+}
+/*Paramétre de l'image métier*/
+.img_job {
+  margin-left: 150px;
+}
+.h1_job {
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+/*Paramétres pour la fin de page*/
+.parameterFooter {
+    height: 70px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+/*Paramétres pour les boutons de fin de page*/
+.parameterBorderButtonFooter {
+    border-radius: 10px;
+    color: black;
+}
+/*Paramétres pour le logo facebook*/
+.parameterLogoFacebook {
+    float: left;
+    color: dimGray;
+    font-size: 2.5rem;
+}
+/*Paramétres pour le logo mail*/
+.parameterLogoMail {
+    float: right;
+    color: dimGray;
+    font-size: 2.5rem;
+}
+/*Paramétre pour le bouton contact*/
+#buttonContact {
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+/*Paramétres pour le bouton du commentaire*/
+.buttonComment {
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#buttonAppointment {
+  color: black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/*Paramétres pour les li de la liste*/
+.parameterLi {
+    color: Wheat;
+    font-size: 1.5rem;
+}
+/*Paramétre formulaire de contact*/
+.formContact {
+    background-image: linear-gradient(chocolate, SaddleBrown);
+}
+/*Paramétre pour les bordures de l'input du formulaire*/
+.inputFormContact {
+    border-radius: 10px;
+}
+/*Couleur marron foncé*/
+.colorSandyBrown{
+    color: SandyBrown;
+}
+/*Paramétres pour le titre H1 de la page contact*/
+.h1_page_contact {
+    color: Peru;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+/*Paramétre pour la couleur du titre h1 de la page connexion*/
+.title_chocolate {
+    color: chocolate;
+}
+/*Paramétre pour la couleur du titre h1*/
+.title_peru {
+    color: peru;
+}
+.h1_accueil {
+  margin-right: 300px;
+}
