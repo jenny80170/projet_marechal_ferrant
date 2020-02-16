@@ -1,0 +1,32 @@
+/*Début des media query pour pouvoir rendre le site responsive*/
+@media screen and (max-width: 740px) {
+  /*Paramétres du nom prénom de l'entête*/
+  #hide {
+    display: none;
+  }
+  .parameterLogoFacebook {
+    font-size: 10vw;
+  }
+  .parameterP, ul {
+    margin-left: 10vw;
+  }
+  .h1_accueil {
+    margin-left: 6vw;
+  }
+  /*Paramétres image carte de visite*/
+  .parameterImg {
+      margin-left: 10vw;
+  }
+  .parameterFooter {
+      height: 15vw;
+  }
+  .img_job {
+    height: 60vw;
+    width: 80vw;
+  }
+  .h1_job {
+    font-size: 8vw;
+    margin-bottom: 10vw;
+    margin-right: 3vw;
+  }
+}

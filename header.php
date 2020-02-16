@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 740px)" href="assets/css/styleMediaQuery.css" />
   <title>Maréchal Ferrant | <?= $page ?> </title>
 </head>
 <body>
@@ -17,8 +18,8 @@
     </div>
     <div class="container parameterNavbar">
       <!--Barre de navigation-->
-      <nav class="navbar navbar-expand-lg navbar-dark parameterNavbar">
-        <button class="navbar-toggler parameterButtonNav" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark parameterNavbar" id="navMenu">
+        <button class="navbar-toggler parameterButtonNav" id="buttonToggle" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-dark"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor01">

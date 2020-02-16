@@ -10,7 +10,7 @@ include 'menu.php';
   <!--Fin du titre-->
   <p>
     <!--Image concernant le métier-->
-    <img class="img_job" height="400" width="600" src="https://res.cloudinary.com/leetchi/image/upload/c_fill,f_auto,fl_lossy,g_center,h_520,q_80,w_715/v1540479275/89ca3e2d-e83d-452d-9687-a3e89079daca.jpg" alt="description image du métier">
+    <img class="img_job img-fluid" height="400" width="600" src="https://res.cloudinary.com/leetchi/image/upload/c_fill,f_auto,fl_lossy,g_center,h_520,q_80,w_715/v1540479275/89ca3e2d-e83d-452d-9687-a3e89079daca.jpg" alt="description image du métier">
   </p>
   <!--Fin de l'image-->
   <p class="parameterP text-center">

@@ -4,13 +4,12 @@ body {
 }
 /*Paramétres pour l'éntête*/
 .parameterHeader {
-    font-size: 40px;
-    border-radius: 10px;
+    font-size: 5vw;
+    border-radius: 0.7vw;
 }
 /*Paramétres pour la barre de navigation*/
 .parameterNavbar {
-    font-size: 20px;
-    border-radius: 10px;
+    border-radius: 0.7vw;
     background-image: linear-gradient(chocolate, Silver, tan);
 }
 /*Paramétres pour les boutons de la barre de navigation*/
@@ -21,7 +20,7 @@ body {
 /*Paramétre pour la taille de l'icone maps*/
 .iconMaps {
     font-size: 5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.5vw;
 }
 /*Paramétres pour le bouton icone maps*/
 .btnGeolocation {
@@ -33,47 +32,47 @@ body {
 .parameterSmileyHappy {
     font-size: 3rem;
     color: yellow;
-    margin-right: 10px;
-    margin-top: 30px;
+    margin-right: 0.7vw;
+    margin-top: 2.3vw;
 }
 /*Paramétres pour le smiley en colére*/
 .parameterSmileyAngry {
     font-size: 3rem;
     color: red;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 2.3vw;
 }
 /*Paramétre pour la couleur du titre h1*/
 h1 {
     color: peru;
-    margin-left: 190px;
+    margin-left: 14.6vw;
 }
 .parameterP, ul{
-    font-size: 20px;
+    font-size: 3vh;
     color: chocolate;
-    margin-right: 150px;
+    margin-right: 11.5vw;
 }
 /*Paramétres image carte de visite*/
 .parameterImg {
-    margin-right: 150px;
+    margin-right: 11.5vw;
 }
 /*Paramétre de l'image métier*/
 .img_job {
-  margin-left: 150px;
+  margin-left: 11.5vw;
 }
 .h1_job {
-  margin-bottom: 30px;
-  margin-right: 50px;
+  margin-bottom: 2.3vw;
+  margin-right: 3.8vw;
 }
 /*Paramétres pour la fin de page*/
 .parameterFooter {
-    height: 70px;
+    height: 6vw;
     margin-top: 5%;
-    border-radius: 10px;
+    border-radius: 0.7vw;
 }
 /*Paramétres pour les boutons de fin de page*/
 .parameterBorderButtonFooter {
-    border-radius: 10px;
+    border-radius: 0.7vw;
     color: black;
 }
 /*Paramétres pour le logo facebook*/
@@ -91,22 +90,22 @@ h1 {
 /*Paramétre pour le bouton contact*/
 #buttonContact {
     color: black;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    border-radius: 1.5vw;
+    margin-bottom: 1.5vw;
+    margin-top: 2.3vw;
 }
 /*Paramétres pour le bouton du commentaire*/
 .buttonComment {
     color: black;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    border-radius: 1.5vw;
+    margin-bottom: 2.3vw;
+    margin-top: 1.5vw;
 }
 #buttonAppointment {
   color: black;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  border-radius: 1.5vw;
+  margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
 }
 /*Paramétres pour les li de la liste*/
 .parameterLi {
@@ -119,7 +118,7 @@ h1 {
 }
 /*Paramétre pour les bordures de l'input du formulaire*/
 .inputFormContact {
-    border-radius: 10px;
+    border-radius: 0.7vw;
 }
 /*Couleur marron foncé*/
 .colorSandyBrown{
@@ -140,5 +139,5 @@ h1 {
     color: peru;
 }
 .h1_accueil {
-  margin-right: 300px;
+  margin-right: 23vw;
 }

@@ -6,16 +6,18 @@
             <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa fa-facebook-square parameterLogoFacebook mt-3 ml-5 font-weight-bold" aria-hidden="true"></i></a>
         </div>
         <!--Fin du logo facebook-->
-        <div>
+        <div id="hide">
             <!--Début du logo mail-->
             <a href="https://outlook.live.com/owa/" target="_blank"><i class="fa fa-envelope parameterLogoMail mt-3 mr-5 font-weight-bold" aria-hidden="true"></i></a>
         </div>
         <!--Fin du logo mail-->
         <!--Boutton d'ouverture modal-->
         <div class="d-flex justify-content-center">
+          <div id="hide">
             <button type="button" class="btn btn-secondary mt-3 mr-5 parameterBorderButtonFooter" data-toggle="modal" data-target="#modalLegalNotice">
                 Mentions Légales
             </button>
+          </div>
             <!--Début de la modal mentions légales-->
             <div class="modal" id="modalLegalNotice" tabindex="-1" role="dialog" aria-labelledby="modalLegalNotice" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -68,9 +70,11 @@
             </div>
             <!--Fin de la modal mentions légales-->
             <!--Bouton d'ouverture modal-->
-            <button type="button" class="btn btn-secondary mr-5 parameterBorderButtonFooter mt-3" data-toggle="modal" data-target="#modalNumberSiret">
-                N° Siret
-            </button>
+            <div id="hide">
+              <button type="button" class="btn btn-secondary mr-5 parameterBorderButtonFooter mt-3" data-toggle="modal" data-target="#modalNumberSiret">
+                  N° Siret
+              </button>
+            </div>
             <!--Début de la modal n° siret-->
             <div class="modal" id="modalNumberSiret" tabindex="-1" role="dialog" aria-labelledby="modalNumberSiret" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document">

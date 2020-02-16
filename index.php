@@ -6,7 +6,7 @@ include 'header.php';
 // Menu sur le coter gauche
 include 'menu.php';
 ?>
-<div class="flex-column col-md-9">
+<div id="contenu" class="flex-column col-md-9">
   <!--Titre pour décrire le métier-->
   <div class="h1_accueil">
     <h1 class="text-center font-weight-bold mb-5 mt-5">Présentation</h1>
@@ -34,7 +34,6 @@ include 'menu.php';
       Je vous souhaite une agréable visite !
     </p>
   </div>
-</div>
 <?php
 // Pied de page du site
 include 'footer.php';
