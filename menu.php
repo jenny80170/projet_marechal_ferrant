@@ -14,8 +14,8 @@
           <!--Bouton de contact qui au click renvoie sur un calendrier-->
           <button type="button" class="btn btn-secondary font-weight-bold" data-toggle="modal" id="buttonAppointment" onclick="window.location.href = 'calendrier.php';">Prenez rendez-vous ici</button>
       <!--Fin du bouton prise de rendez-vous-->
+    </div>
         </p>
-      </div>
       <!--Fin de card coordonnées client-->
       <div class="displayNonePhone">
       <div class="d-flex justify-content-center">
@@ -56,6 +56,7 @@
               <!--Smiley heureux et pas content qui au click affiche une fenêtre pour ajouter un commentaire-->
               <i class="fa fa-smile-o parameterSmileyHappy" aria-hidden="true"></i>
               <i class="fa fa-frown-o parameterSmileyAngry" aria-hidden="true"></i><br>
+            </p>
             </div>
             <button type="button" class="btn btn-secondary buttonComment text-center font-weight-bold" name="button">Commentaires</button>
           </div>
