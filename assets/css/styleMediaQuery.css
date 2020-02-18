@@ -6,6 +6,7 @@
   }
   .parameterLogoFacebook {
     font-size: 10vw;
+    margin-right: 6vw;
   }
   .parameterP, ul {
     margin-left: 10vw;
@@ -18,7 +19,7 @@
     margin-left: 10vw;
   }
   .parameterFooter {
-    height: 15vw;
+    height: 20vw;
   }
   .img_job {
     height: 60vw;
@@ -29,17 +30,40 @@
     margin-bottom: 10vw;
     margin-right: 3vw;
   }
+  #buttonContact {
+    display: block;
+    font-size: 4vw;
+    height: 5vh;
+    margin-left: 10vw;
+    margin-right: 3vw;
+    margin-top: 6vw;
+  }
   #buttonPhone {
-    display: inline-block;
+    display: block;
+    font-size: 5vw;
   }
   .iconMaps {
+    display: block;
     font-size: 10vw;
-    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
   }
   .displayNonePhone {
     display: none;
   }
   .coordinatedPhone {
     width: 90%;
+    height: 23vh;
+  }
+  #flexPhone {
+    display: flex;
+    justify-content: space-between;
+  }
+  #viewPhone {
+    display: block;
+    font-size: 4vw;
+    height: 5vh;
+    margin-top: 6vw;
+    margin-left: 8vw;
   }
 }

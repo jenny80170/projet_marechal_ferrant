@@ -1,11 +1,10 @@
 <!--Début du pied de page avec logo facebook et logo mail qui au click renvoie sur les sites dans un nouvel onglet puis les mentions légales et n° siret avec ouverture modal dés lors du click-->
 <footer class="container">
-  <div class="bg-primary parameterFooter">
-    <button type="button" class="btn btn-secondary font-weight-bold contactPhone" data-toggle="modal" id="buttonContact" onclick="window.location.href = 'contact.php';">Contactez-moi</button>
-    <div>
+  <div class="bg-primary parameterFooter" id="flexPhone">
+      <button type="button" class="btn btn-secondary font-weight-bold contactPhone" data-toggle="modal" id="buttonContact" onclick="window.location.href = 'contact.php';">Contact</button>
+        <button type="button" class="btn btn-secondary buttonComment text-center font-weight-bold" id="viewPhone" name="button">Avis</button>
       <!--Début du logo facebook-->
-      <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa fa-facebook-square parameterLogoFacebook mt-3 ml-5 font-weight-bold" aria-hidden="true"></i></a>
-    </div>
+        <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa fa-facebook-square parameterLogoFacebook font-weight-bold" aria-hidden="true"></i></a>
     <!--Fin du logo facebook-->
     <button id="buttonPhone" type="button" class="btnGeolocation" data-toggle="modal" data-target="#exampleModalCentered">
       <i class="fa fa-map-marker iconMaps" aria-hidden="true"></i>
@@ -100,6 +99,7 @@
       </div>
     </div>
   </div>
+</div>
   <!--Fin de la modal n° siret et fin du pied de page-->
 </footer>
 <script src="assets/js/jquery.js"></script>

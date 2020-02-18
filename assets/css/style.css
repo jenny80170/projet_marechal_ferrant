@@ -80,6 +80,8 @@ h1 {
     float: left;
     color: dimGray;
     font-size: 2.5rem;
+    margin-left: 45px;
+    margin-top: 20px
 }
 /*Paramétres pour le logo mail*/
 .parameterLogoMail {
@@ -145,5 +147,8 @@ h1 {
   display: none;
 }
 .contactPhone {
+  display: none;
+}
+#viewPhone {
   display: none;
 }
