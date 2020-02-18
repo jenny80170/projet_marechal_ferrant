@@ -141,3 +141,9 @@ h1 {
 .h1_accueil {
   margin-right: 23vw;
 }
+#buttonPhone {
+  display: none;
+}
+.contactPhone {
+  display: none;
+}

@@ -15,10 +15,10 @@
   }
   /*Paramétres image carte de visite*/
   .parameterImg {
-      margin-left: 10vw;
+    margin-left: 10vw;
   }
   .parameterFooter {
-      height: 15vw;
+    height: 15vw;
   }
   .img_job {
     height: 60vw;
@@ -28,5 +28,18 @@
     font-size: 8vw;
     margin-bottom: 10vw;
     margin-right: 3vw;
+  }
+  #buttonPhone {
+    display: inline-block;
+  }
+  .iconMaps {
+    font-size: 10vw;
+    margin-left: 5vw;
+  }
+  .displayNonePhone {
+    display: none;
+  }
+  .coordinatedPhone {
+    width: 90%;
   }
 }
