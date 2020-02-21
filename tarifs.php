@@ -8,22 +8,21 @@ include 'menu.php';
 ?>
 <div class="flex-column col-md-9 col-sm-4">
   <!--Titre pour décrire le métier-->
-  <h1 class="title_peru font-weight-bold mt-5 ml-5 text-center mb-5 mr-3">Tarifs</h1>
+  <h1 class="title_peru arount font-weight-bold mt-5 text-center mb-5">Tarifs</h1>
   <!--Fin du titre-->
-  <p class="parameterContents font-weight-bold text-center mb-5">
+  <p class="parameterP font-weight-bold text-center mb-5">
     Pour connaître les tarifs veuillez faire <br> une demande de devis et je vous recontacterais.
   </p>
-  <h2 class="parameterTitle text-center font-weight-bold mb-5">Moyens de paiement</h2>
+  <h2 class="title_peru payment text-center font-weight-bold mb-5">Moyens de paiement</h2>
   <ul class="parameterContents text-center font-weight-bold mb-5">
     <li>Chèques</li>
     <li>Espéces</li>
     <li>Virements</li>
   </ul>
-  <h2 class="parameterTitle text-center font-weight-bold mb-5">Petite information importante</h2>
-  <p class="parameterContents text-center font-weight-bold mb-5">
+  <h2 class="title_peru info text-center font-weight-bold mb-5">Petite information importante</h2>
+  <p class="parameterP text-center font-weight-bold mb-5">
     Les paiements par carte <br> ne sont pas accepter !!!
   </p>
-</div>
 </div>
 <?php
 // Pied de page du site

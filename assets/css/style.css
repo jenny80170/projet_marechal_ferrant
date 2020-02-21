@@ -6,6 +6,7 @@ body {
 .parameterHeader {
     font-size: 5vw;
     border-radius: 0.7vw;
+    margin-top: 2vw;
 }
 /*Paramétres pour la barre de navigation*/
 .parameterNavbar {
@@ -87,7 +88,7 @@ h1 {
 .parameterLogoMail {
     float: right;
     color: dimGray;
-    font-size: 2.5rem;
+    font-size: 2.5rem;</div>
 }
 /*Paramétre pour le bouton contact*/
 #buttonContact {
@@ -150,5 +151,17 @@ h1 {
   display: none;
 }
 #viewPhone {
+  display: none;
+}
+.arount {
+  margin-right: 25vw;
+}
+.payment {
+  margin-right: 11vw;
+}
+.info {
+  margin-right: 10vw;
+}
+#phoneConnect {
   display: none;
 }

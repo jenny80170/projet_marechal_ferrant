@@ -25,7 +25,7 @@
       <div class="modal" id="modalLegalNotice" tabindex="-1" role="dialog" aria-labelledby="modalLegalNotice" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header">    width: 100%;
               <h2 class="modal-title text-primary" id="modalNotice">Mentions Légales</h2>
               <button type="button" class="close text-primary" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
@@ -37,14 +37,14 @@
               Adresse du siège social : 2 rue Kellermann - 59100 Roubaix - France<br>
               Numéro de téléphone : 09 72 10 10 07<br>
               2. Informations relatives à l'éditeur<br>
-              Raison sociale : MARECHAL FERRANT<br>
+              Raison sociale : MARECHAL    width: 100%; FERRANT<br>
               Adresse : 2 place des brouvreuils 80110 Moreuil<br>
               Téléphone : 0634306343<br>
               E-mail : foucartflorianmarechalferrant@outlook.fr<br>
               Directeur de publication : Mikael DAVID<br>
               RCS : 82319244800000<br>
               3. Conditions d'utilisation<br>
-              Le site est accessible par l'url marechalerie-davidmikael.fr.
+              Le site est accessible pa    width: 100%;r l'url marechalerie-davidmikael.fr.
               Son utilisation est régie par les présentes conditions générales. En utilisant le site, vous reconnaissez avoir pris connaissance de ces conditions et les avoir acceptées. Celles-ci pourront être modifiées à tout moment et sans préavis par la société MARECHAL FERRANT.
               MARECHAL FERRANT ne saurait être tenue pour responsable en aucune manière d'une mauvaise utilisation du service.<br>
               4. Limitation de la responsabilité<br>
@@ -53,7 +53,7 @@
               Les liens hypertextes mis en place sur ce site internet en direction d'autres sites internet ne sauraient engager la responsabilité de MARECHAL FERRANT.<br>
               5. Litiges<br>
               Les présentes conditions sont régies par les lois françaises et toute contestation ou litige qui pourrait naître de l'interprétation ou de l'exécution de celles-ci seront de la compétence exclusive des tribunaux dont dépend le siège social de la société MARECHAL FERRANT. La langue de référence, pour le règlement de contentieux éventuels, est le français.<br>
-              6. Données personnelles<br>
+              6. Données personnelles<b    width: 100%;r>
               En application de la loi informatique et libertés, les internautes disposent d'un droit d'accès, de rectification, de modification et de suppression concernant les données qui les concernent personnellement. Ce droit peut être exercé par voie postale auprès de MARECHAL FERRANT 2 place des brouvreuils 29300 Quimperlé ou par voie électronique à l'adresse email suivante : contact@marechalerie-davidmikael.fr.
               Les informations personnelles collectées sont confidentielles et ne sont en aucun cas transmises à des tiers hormis pour l'éventuelle bonne exécution de la prestation commandée par l'internaute. En vertu de la loi n° 2000-719 du 1er août 2000, les coordonnées déclarées par l'acheteur pourront être communiquées sur réquisition des autorités judiciaires.<br>
               7. Propriété intellectuelle<br>

@@ -30,17 +30,9 @@
       <!-- Début de la modal géolocalisation -->
       <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
           <div class="modal-body">
             <!--Insertion de la carte maps-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49027.25880909703!2d2.4491935188965797!3d49.7733158396207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e793a6198fef93%3A0xe0263c33339324c7!2s80110%20Moreuil!5e0!3m2!1sfr!2sfr!4v1574153605631!5m2!1sfr!2sfr" width="600" height="450" allowfullscreen="" class="img-fluid"></iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary justify-content-center" data-dismiss="modal">Fermer</button>
           </div>
         </div>
       </div>

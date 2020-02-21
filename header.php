@@ -12,11 +12,11 @@
 <body>
   <!--Entête avec métier et nom prenom du client et la barre de navigation-->
   <header>
-    <div class="container bg-primary mt-3 parameterHeader">
+    <div class="container bg-primary parameterHeader">
       <h1 class="text-dark text-center parameterHeader">Maréchal Ferrant</h1>
       <p class="text-dark text-center">Florian Foucart</p>
     </div>
-    <div class="container parameterNavbar">
+    <div class="container parameterNavbar" id="navPhone">
       <!--Barre de navigation-->
       <nav class="navbar navbar-expand-lg navbar-dark parameterNavbar" id="navMenu">
         <button class="navbar-toggler parameterButtonNav" id="buttonToggle" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +24,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav m-auto">
+            <li>
+              <i id="phoneConnect" class="fa fa-user-circle-o" aria-hidden="true"><a class="nav-link font-weight-bold text-dark" href="connexion.php">Je me connecte</a></i>
+            </li>
             <li class="nav-item active">
               <a class="nav-link font-weight-bold text-dark" href="index.php">Accueil</a>
             </li>
@@ -31,10 +34,10 @@
               <a class="nav-link font-weight-bold text-dark" href="description.php">Métier</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" href="devis.php">Devis</a>
+              <a class="nav-link font-weight-bold text-dark" id="phoneQuote" href="devis.php">Devis</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" href="tarifs.php">Tarifs</a>
+              <a class="nav-link font-weight-bold text-dark" id="phonePrices" href="tarifs.php">Tarifs</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link font-weight-bold text-dark" href="produits.php">Produits</a>

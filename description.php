@@ -4,7 +4,7 @@ include 'header.php';
 // Menu sur le coter gauche
 include 'menu.php';
 ?>
-<div class="flex-column col-md-9">
+<div class="flex-column col-md-9" id="contenu">
   <!--Titre pour décrire le métier-->
   <h1 class="h1_job font-weight-bold mt-5">Description du métier</h1>
   <!--Fin du titre-->
@@ -28,7 +28,6 @@ include 'menu.php';
     <li>BTM maréchal-ferrant</li>
   </ul>
   <p class="parameterP text-center">pour des responsabilités d'encadrement et de formation ou se spécialiser dans l'orthopédie équine.</p>
-</div>
 </div>
 <?php
 // Pied de page du site

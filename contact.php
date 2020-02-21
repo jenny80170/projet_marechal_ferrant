@@ -52,7 +52,6 @@ include 'menu.php';
     <!--Fin du formulaire de contact-->
   </form>
 </div>
-</div>
 <?php
 // Pied de page du site
 include 'footer.php';
