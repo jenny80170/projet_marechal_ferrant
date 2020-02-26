@@ -1,0 +1,183 @@
+/*Début des media query pour pouvoir rendre le site responsive*/
+@media screen and (max-width: 375px) {
+  /*Paramétres du nom prénom de l'entête*/
+  .hide {
+    display: none;
+  }
+  .parameterLogoFacebook {
+    font-size: 11vw;
+    margin-right: 8vw;
+    margin-left: 10vw;
+  }
+  .parameterP, ul {
+    margin-left: 10vw;
+  }
+  .h1_accueil {
+    margin-left: 6vw;
+  }
+  /*Paramétres image carte de visite*/
+  .parameterImg {
+    margin-left: 10vw;
+  }
+  .parameterFooter {
+    height: 10vh;
+    width: 100%;
+  }
+  .img_job {
+    height: 60vw;
+    width: 90vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  .h1_job {
+    font-size: 8vw;
+    margin-bottom: 10vw;
+    margin-right: 9vw;
+    margin-left: 9vw;
+  }
+  #buttonContact {
+    display: block;
+    font-size: 4vw;
+    height: 5vh;
+    margin-left: 10vw;
+    margin-right: 3vw;
+    margin-top: 6vw;
+  }
+  #buttonPhone {
+    display: block;
+    font-size: 5vw;
+  }
+  .iconMaps {
+    display: block;
+    font-size: 12vw;
+    margin-right: 10vw;
+    margin-top: 5.2vw;
+  }
+  .displayNonePhone {
+    display: none;
+  }
+  .coordinatedPhone {
+    width: 90%;
+    height: 23vh;
+  }
+  .flexPhone {
+    display: flex;
+    justify-content: space-between;
+  }
+  #viewPhone {
+    display: block;
+    font-size: 4vw;
+    height: 5vh;
+    margin-top: 6vw;
+    margin-left: 6vw;
+  }
+  .parameterNavbar {
+    background: transparent;
+  }
+  .navPhone {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10vw;
+  }
+  .parameterHeader {
+  margin-top: 0;
+  }
+  .arount {
+    margin: auto;
+  }
+  .payment {
+    margin-left: 8vw;
+  }
+  .info {
+    margin-left: 5vw;
+  }
+  #phoneQuote {
+    display: none;
+  }
+  #phonePrices {
+    display: none;
+  }
+  #phoneConnect {
+    display: inline-block;
+    color: black;
+    font-size: 15vw;
+    margin-top: 5vw;
+    margin-right: 10vw;
+  }
+  .connectPhone {
+    display: inline-block;
+    font-size: 6vw;
+    margin-left: 5vw;
+  }
+  #quotePhone {
+    display: block;
+    color: black;
+    margin-top: 5vw;
+    border-radius: 5vw;
+  }
+  #appointmentPhone {
+    display: block;
+    color: black;
+    margin-top: 5vw;
+    border-radius: 5vw;
+  }
+  #pricesPhone {
+    display: block;
+    color: black;
+    margin-top: 5vw;
+    border-radius: 5vw;
+  }
+  #connectPhone {
+    display: none;
+  }
+  #MentionMobil {
+    display: block;
+  }
+  .titleQuotePhone {
+    font-size: 9vw;
+    margin-right: 4vw;
+    margin-left: 3vw;
+    margin-bottom: 5vw;
+  }
+  .p_quotePhone {
+    text-align: center;
+  }
+  .H1_page_contact {
+    font-size: 10vw;
+    margin-right: 5vw;
+    margin-left: 13vw;
+    margin-bottom: 5vw;
+  }
+  .parameterLi {
+    font-size: 4vw;
+    margin-right: 15vw;
+  }
+  .info {
+    margin-left: 5vw;
+    white-space: nowrap;
+  }
+  .payment {
+    margin-right: 5vw;
+  }
+  #modalNotice {
+    width: 100vw;
+  }
+  #noticePhone {
+    display: block;
+}
+#siretPhone {
+  display: block;
+}
+#modalSiret {
+  width: 100vw;
+  justify-content: center;
+}
+.imgIframe {
+  width: 90vw;
+  height: 40vh;
+}
+form {
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+}

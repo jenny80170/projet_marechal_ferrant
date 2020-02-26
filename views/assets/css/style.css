@@ -1,0 +1,198 @@
+/*Propriété pour ne pas modifier la largeur de la page*/
+body {
+    overflow-x: hidden;
+}
+/*Paramétres pour l'éntête*/
+.parameterHeader {
+    font-size: 5vw;
+    border-radius: 0.7vw;
+    margin-top: 2vw;
+}
+/*Paramétres pour la barre de navigation*/
+.parameterNavbar {
+    border-radius: 0.7vw;
+    background-image: linear-gradient(chocolate, Silver, tan);
+}
+/*Paramétres pour les boutons de la barre de navigation*/
+.parameterButtonNav {
+    color: black;
+    background-color: grey;
+}
+/*Paramétre pour la taille de l'icone maps*/
+.iconMaps {
+    font-size: 5rem;
+    margin-bottom: 1.5vw;
+}
+/*Paramétres pour le bouton icone maps*/
+.btnGeolocation {
+    display: block;
+    background-color: inherit;
+    border: none;
+}
+/*Paramétres pour le smiley content*/
+.parameterSmileyHappy {
+    font-size: 3rem;
+    color: yellow;
+    margin-right: 0.7vw;
+    margin-top: 2.3vw;
+}
+/*Paramétres pour le smiley en colére*/
+.parameterSmileyAngry {
+    font-size: 3rem;
+    color: red;
+    justify-content: space-between;
+    margin-top: 2.3vw;
+}
+/*Paramétre pour la couleur du titre h1*/
+h1 {
+    color: peru;
+    margin-left: 14.6vw;
+}
+.parameterP, ul{
+    font-size: 3vh;
+    color: chocolate;
+    margin-right: 11.5vw;
+}
+/*Paramétres image carte de visite*/
+.parameterImg {
+    margin-right: 11.5vw;
+}
+/*Paramétre de l'image métier*/
+.img_job {
+  margin-left: 8vw;
+  margin-bottom: 5vw;
+}
+.h1_job {
+  margin-bottom: 5vw;
+  margin-right: 25vw;
+  margin-top: 5vw;
+}
+/*Paramétres pour la fin de page*/
+.parameterFooter {
+    height: 6vw;
+    margin-top: 5%;
+    border-radius: 0.7vw;
+}
+/*Paramétres pour les boutons de fin de page*/
+.parameterBorderButtonFooter {
+    border-radius: 0.7vw;
+    color: black;
+}
+/*Paramétres pour le logo facebook*/
+.parameterLogoFacebook {
+    float: left;
+    color: dimGray;
+    font-size: 2.5rem;
+    margin-left: 45px;
+    margin-top: 20px
+}
+/*Paramétres pour le logo mail*/
+.parameterLogoMail {
+    float: right;
+    color: dimGray;
+    font-size: 2.5rem;</div>
+}
+/*Paramétre pour le bouton contact*/
+#buttonContact {
+    color: black;
+    border-radius: 1.5vw;
+    margin-bottom: 1.5vw;
+    margin-top: 2.3vw;
+}
+/*Paramétres pour le bouton du commentaire*/
+.buttonComment {
+    color: black;
+    border-radius: 1.5vw;
+    margin-bottom: 2.3vw;
+    margin-top: 1.5vw;
+}
+#buttonAppointment {
+  color: black;
+  border-radius: 1.5vw;
+  margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
+}
+/*Paramétres pour les li de la liste*/
+.parameterLi {
+    color: Wheat;
+    font-size: 1.5rem;
+    margin-left: 10vw;
+}
+/*Paramétre formulaire de contact*/
+.formContact {
+    background-image: linear-gradient(chocolate, SaddleBrown);
+}
+/*Paramétre pour les bordures de l'input du formulaire*/
+.inputFormContact {
+    border-radius: 0.7vw;
+}
+/*Couleur marron foncé*/
+.colorSandyBrown{
+    color: SandyBrown;
+}
+/*Paramétres pour le titre H1 de la page contact*/
+.H1_page_contact {
+    color: Peru;
+    font-size: 3rem;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-right: 5vw;
+    margin-left: 20vw;
+}
+/*Paramétre pour la couleur du titre h1 de la page connexion*/
+.title_chocolate {
+    color: chocolate;
+}
+/*Paramétre pour la couleur du titre h1*/
+.title_peru {
+    color: peru;
+}
+.h1_accueil {
+  margin-right: 23vw;
+}
+#buttonPhone {
+  display: none;
+}
+.contactPhone {
+  display: none;
+}
+#viewPhone {
+  display: none;
+}
+.arount {
+  margin-right: 25vw;
+}
+.payment {
+  margin-right: 11vw;
+}
+.info {
+  margin-right: 10vw;
+}
+#phoneConnect {
+  display: none;
+}
+#quotePhone {
+  display: none;
+}
+#appointmentPhone {
+  display: none;
+}
+#pricesPhone {
+  display: none;
+}
+#noticePhone {
+  display: none;
+}
+.navPhone {
+  opacity: 1;
+}
+#siretPhone {
+  display: none;
+}
+.imgIframe {
+  height: 90vh;
+  width: 40vw;
+}
+.title_quote {
+  margin-right: 20vw;
+}
