@@ -1,3 +1,3 @@
 <?php
-require_once '../views/modal.php';
+require_once ROOT .'/views/modalView.php';
  ?>

@@ -2,41 +2,44 @@
 //Variable permettant de changer le titre du head
 $page = 'Devis';
 // Insertion du header avec entête et barre de navigation
-include '../views/include/header.php';
+include_once ROOT .'/views/include/header.php';
 // Insertion du menu sur le coter gauche
-include '../views/include/menu.php';
+include_once ROOT .'/views/include/menu.php';
 ?>
 <div class="col-xl-9 col-md-9">
     <!--Les moyens de contact du client (tél, mail et formulaire de contact)-->
-    <h1 class="title_peru d-flex justify-content-center mt-5 mb-5 font-weight-bold titleQuotePhone title_quote">Demande de devis</h1>
-    <p class="parameterP font-weight-bold p_quotePhone text-center">Vous voulez un devis ? demandez le via le formulaire ci-dessous</p>
+    <h1 class="title_peru d-flex justify-content-center mt-5 mb-5 font-weight-bold titleQuotePhone title_quote">Demande d'informations</h1>
+    <p class="parameterP font-weight-bold p_quotePhone text-center">Vous voulez des informations sur le produit, demandez le via le formulaire ci-dessous</p>
     <!--Fin des moyens de contact-->
     <!--Début du formulaire de contact-->
     <form class="mt-5">
+        <div>
+            <h1 name="nameProduct" id="nameProduct"><?= $nameProduct ?></h1>
+        </div>
+        <div>
+            <p name="descriptionProduct" id="descriptionProduct"><?= $descProduct ?></p>
+        </div>
       <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
         <label for="surname">Entrez votre nom</label>
-        <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="surname" name="surname" value="" placeholder="Exemple : Foucart" required>
+        <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="surname" name="surname" placeholder="Exemple : Foucart" required>
       </div>
       <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
         <label for="firstname">Entrez votre prénom</label>
-        <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="firstname" name="firstname" value="" placeholder="Exemple : Florian" required>
+        <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="firstname" name="firstname" placeholder="Exemple : Florian" required>
       </div>
       <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold font-weight-bold">
         <label for="numberPhone">Entrez votre numéro de téléphone</label>
-        <input type="tel" class=" formContact inputFormContact mt-4 text-white font-weight-bold" id="numberPhone" name="numberPhone" value="" placeholder="Exemple : 06 ** ** ** **" required>
+        <input type="tel" class=" formContact inputFormContact mt-4 text-white font-weight-bold" id="numberPhone" name="numberPhone" placeholder="Exemple : 06 ** ** ** **" required>
       </div>
       <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
         <label for="email">Entrez votre adresse mail</label>
-        <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="email" name="email" value="" placeholder="Exemple : exemple@gmail.fr" required>
+        <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="email" name="email" placeholder="Exemple : exemple@gmail.fr" required>
       </div>
       <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
         <label for="demande">En quoi consiste votre demande</label>
-        <select class="formContact inputFormContact mt-4 text-white font-weight-bold">
-          <option class="formContact inputFormContact mt-4 text-white font-weight-bold">Prestations</option>
-          <option>Devis</option>
-          <option>Tarifs</option>
-          <option>Contact</option>
-          <option>Produits</option>
+        <select name="selectType" id="selectType" class="formContact inputFormContact mt-4 text-white font-weight-bold">
+            <option value="2" class="formContact inputFormContact mt-4 text-white font-weight-bold">Prestations</option>
+            <option value="3">Devis</option>
         </select>
       </div>
       <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
@@ -52,5 +55,5 @@ include '../views/include/menu.php';
 </div>
 <?php
 // Insertion du pied de page du site
-include '../views/include/footer.php';
+include_once ROOT .'/views/include/footer.php';
 ?>

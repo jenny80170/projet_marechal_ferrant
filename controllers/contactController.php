@@ -1,3 +1,3 @@
 <?php
-require_once '../views/contact.php';
+require_once ROOT .'/views/contactView.php';
  ?>

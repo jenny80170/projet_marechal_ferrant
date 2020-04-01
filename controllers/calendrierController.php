@@ -1,3 +1,3 @@
 <?php
-require_once 'views/calendrier.php';
+require_once 'views/calendrierView.php';
 ?>

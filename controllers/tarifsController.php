@@ -1,3 +1,3 @@
 <?php
-require_once '../views/tarifs.php';
+require_once ROOT .'/views/tarifsView.php';
  ?>

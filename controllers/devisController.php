@@ -1,3 +1,3 @@
 <?php
-require_once '../views/devis.php';
+require_once ROOT .'/views/devisView.php';
  ?>

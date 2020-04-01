@@ -1,0 +1,76 @@
+<?php
+//Variable permettant de changer le titre du head
+$page = 'Contact';
+// Insertion du header avec entête et barre de navigation
+require_once ROOT .'/views/include/header.php';
+// Insertion du menu sur le coter gauche
+require_once  ROOT .'/views/include/menu.php';
+?>
+<div class="col-md-9">
+  <!--Les moyens de contact du client (tél, mail et formulaire de contact)-->
+  <h1 class="H1_page_contact font-weight-bold">Moyens de contact</h1>
+  <ul>
+    <li class="parameterLi">Par téléphone au 06 34 30 63 43</li>
+    <li class="parameterLi">Ou par mail à l'adresse suivante :<br>foucartflorianmarechalferrant@outlook.fr</li>
+    <li class="parameterLi">Ou directement via le formulaire de contact ci-dessous</li>
+  </ul>
+  <!--Fin des moyens de contact-->
+  <!--Début du formulaire de contact-->
+<form class="mt-5" action="index.php?index=form_validation" method="POST" novalidate>
+    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="lastname">Entrez votre nom</label>
+      <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="lastname" name="lastname" placeholder="Exemple : Foucart" required>
+      <span class="text-danger"> <?= ($errors['lastname']) ?? '' ?> </span>
+    </div>
+    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="firstname">Entrez votre prénom</label>
+      <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="firstname" name="firstname" placeholder="Exemple : Florian" required>
+      <span class="text-danger"> <?= $errors['firstname'] ?? '' ?> </span>
+    </div>
+    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold font-weight-bold">
+      <label for="numberPhone">Entrez votre numéro de téléphone</label>
+      <input type="tel" class=" formContact inputFormContact mt-4 text-white font-weight-bold" id="numberPhone" name="numberPhone" placeholder="Exemple : 06 ** ** ** **" required>
+      <span class="text-danger"> <?= $errors['numberPhone'] ?? '' ?> </span>
+    </div>
+    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="email">Entrez votre adresse mail</label>
+      <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="email" name="email" placeholder="Exemple : exemple@gmail.fr" required>
+    <span class="text-danger"> <?= $errors['email'] ?? '' ?> </span>
+    </div>
+      <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="city">Entrez votre ville</label>
+      <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="city" name="city" placeholder="Exemple : Amiens" required>
+    <span class="text-danger"> <?= $errors['city'] ?? '' ?> </span>
+    </div>
+      <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="zipCode">Entrez votre code postale</label>
+      <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="zipCode" name="zipCode" placeholder="Exemple : 80000" required>
+    <span class="text-danger"> <?= $errors['zipCode'] ?? '' ?> </span>
+    </div>
+    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="service">En quoi consiste votre demande</label>
+      <select class="formContact inputFormContact mt-4 text-white font-weight-bold" name="service">
+          <option class="formContact inputFormContact mt-4 text-white font-weight-bold" value="2">Prestations</option>
+          <option value="3">Devis</option>
+          <option value="4">Tarifs</option>
+          <option value="5">Contact</option>
+          <option value="6">Produits</option>
+      </select>
+    </div>
+    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <label for="message">Entrez votre message</label>
+      <textarea name="message" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="message" rows="8" cols="80" placeholder="Taper votre message" required></textarea>
+    <span class="text-danger"> <?= $errors['message'] ?? '' ?> </span>
+    </div>
+    <div class="d-flex justify-content-center colorSandyBrown font-weight-bold">
+      <input type="submit" class="formContact inputFormContact mb-3 mt-3 text-white font-weight-bold" id="validate" name="validate" value="Envoyer">
+    </div>
+    <!--Fin du formulaire de contact-->
+  </form>
+</div>
+</div>
+</div>
+    <?php
+// Insertion du pied de page du site
+include_once ROOT .'/views/include/footer.php';
+?>

@@ -1,183 +1,763 @@
 /*Début des media query pour pouvoir rendre le site responsive*/
-@media screen and (max-width: 375px) {
-  /*Paramétres du nom prénom de l'entête*/
-  .hide {
-    display: none;
-  }
-  .parameterLogoFacebook {
-    font-size: 11vw;
-    margin-right: 8vw;
-    margin-left: 10vw;
-  }
-  .parameterP, ul {
-    margin-left: 10vw;
-  }
-  .h1_accueil {
-    margin-left: 6vw;
-  }
-  /*Paramétres image carte de visite*/
-  .parameterImg {
-    margin-left: 10vw;
-  }
-  .parameterFooter {
-    height: 10vh;
-    width: 100%;
-  }
-  .img_job {
-    height: 60vw;
-    width: 90vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
-  .h1_job {
-    font-size: 8vw;
-    margin-bottom: 10vw;
-    margin-right: 9vw;
-    margin-left: 9vw;
-  }
-  #buttonContact {
-    display: block;
-    font-size: 4vw;
-    height: 5vh;
-    margin-left: 10vw;
-    margin-right: 3vw;
-    margin-top: 6vw;
-  }
-  #buttonPhone {
-    display: block;
-    font-size: 5vw;
-  }
-  .iconMaps {
-    display: block;
-    font-size: 12vw;
-    margin-right: 10vw;
-    margin-top: 5.2vw;
-  }
-  .displayNonePhone {
-    display: none;
-  }
-  .coordinatedPhone {
-    width: 90%;
-    height: 23vh;
-  }
-  .flexPhone {
-    display: flex;
-    justify-content: space-between;
-  }
-  #viewPhone {
-    display: block;
-    font-size: 4vw;
-    height: 5vh;
-    margin-top: 6vw;
-    margin-left: 6vw;
-  }
-  .parameterNavbar {
-    background: transparent;
-  }
-  .navPhone {
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 10vw;
-  }
-  .parameterHeader {
-  margin-top: 0;
-  }
-  .arount {
-    margin: auto;
-  }
-  .payment {
-    margin-left: 8vw;
-  }
-  .info {
-    margin-left: 5vw;
-  }
-  #phoneQuote {
-    display: none;
-  }
-  #phonePrices {
-    display: none;
-  }
-  #phoneConnect {
-    display: inline-block;
-    color: black;
-    font-size: 15vw;
-    margin-top: 5vw;
-    margin-right: 10vw;
-  }
-  .connectPhone {
-    display: inline-block;
-    font-size: 6vw;
-    margin-left: 5vw;
-  }
-  #quotePhone {
-    display: block;
-    color: black;
-    margin-top: 5vw;
-    border-radius: 5vw;
-  }
-  #appointmentPhone {
-    display: block;
-    color: black;
-    margin-top: 5vw;
-    border-radius: 5vw;
-  }
-  #pricesPhone {
-    display: block;
-    color: black;
-    margin-top: 5vw;
-    border-radius: 5vw;
-  }
-  #connectPhone {
-    display: none;
-  }
-  #MentionMobil {
-    display: block;
-  }
-  .titleQuotePhone {
-    font-size: 9vw;
-    margin-right: 4vw;
-    margin-left: 3vw;
-    margin-bottom: 5vw;
-  }
-  .p_quotePhone {
-    text-align: center;
-  }
-  .H1_page_contact {
-    font-size: 10vw;
-    margin-right: 5vw;
-    margin-left: 13vw;
-    margin-bottom: 5vw;
-  }
-  .parameterLi {
-    font-size: 4vw;
-    margin-right: 15vw;
-  }
-  .info {
-    margin-left: 5vw;
-    white-space: nowrap;
-  }
-  .payment {
-    margin-right: 5vw;
-  }
-  #modalNotice {
-    width: 100vw;
-  }
-  #noticePhone {
-    display: block;
+@media screen and (max-width: 600px) {
+    /* Paramétre pour cacher diverses éléments */
+    .hide {
+        display: none;
+    }
+    /* Paramétres pour le logo facebook */
+    .parameterLogoFacebook {
+        font-size: 11vw;
+        margin-right: 7vw;
+        margin-left: 10vw;
+        margin-top: 3.5vw;
+        margin-bottom: 3.5vw;
+    }
+    /* Paramétres pour l'image du métier */
+    .img_job {
+        height: 60vw;
+        width: 90vw;
+    }
+    /* Paramétres pour le titre de niveau 1 de la page métier */
+    .h1_job {
+        font-size: 8vw;
+        margin-bottom: 10vw;
+        margin-right: 9vw;
+        margin-left: 9vw;
+    }
+    /* Paramétres pour le bouton contact */
+    #buttonContact {
+        display: block;
+        font-size: 3.5vw;
+        height: 5vh;
+        margin-left: 10vw;
+        margin-right: 3vw;
+        margin-top: 3.5vw;
+        margin-bottom: 3.5vw;
+    }
+    /* Paramétres pour les boutons du format mobile */
+    #buttonPhone {
+        display: block;
+        font-size: 5vw;
+    }
+    /* Paramétres pour l'icon de géolocalisation */
+    .iconMaps {
+        font-size: 11vw;
+        margin-right: 7vw;
+        margin-top: 3.5vw;
+        margin-bottom: 3.5vw;
+    }
+    /* Paramétre pour faire disparaître diverses éléments sous format mobile */
+    .displayNonePhone {
+        display: none;
+    }
+    /* Paramétres pour les coordonnées au format mobile */
+    .coordinatedPhone {
+        width: 90vw;
+        height: auto;
+    }
+    /* Paramétres pour aligner et espacer les éléments dans le pied de page */
+    .flexPhone {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Paramétres pour le bouton avis sous format mobile */
+    #viewPhone {
+        display: block;
+        font-size: 3.5vw;
+        height: 5vh;
+        margin-top: 3.5vw;
+        margin-bottom: 3.5vw;
+        margin-left: 6vw;
+    }
+    /* Paramétre pour la transparence de la barre de navigation */
+    .parameterNavbar {
+        background: transparent;
+    }
+    /* Paramétres pour la barre de navigation mobile */
+    .navPhone {
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 10vw;
+    }
+    /* Paramétre pour l'entête de page */
+    .parameterHeader {
+        margin-top: 0;
+    }
+    /* Paramétre le titre "tarifs" */
+    .rate {
+        margin: auto;
+    }
+    /* Paramétre pour le paiement */
+    .payment {
+        margin-left: 8vw;
+    }
+    /* Paramétre pour les informations de paiement */
+    .info {
+        margin-left: 5vw;
+    }
+    /* Paramétre pour le bouton demande de devis */
+    #phoneQuote {
+        display: none;
+    }
+    /* Paramétre pour le bouton tarifs */
+    #phonePrices {
+        display: none;
+    }
+    /* Début des paramétres pour le bouton connexion sous format mobile */
+    #phoneConnect {
+        display: inline-block;
+        color: black;
+        font-size: 15vw;
+        margin-top: 5vw;
+        margin-right: 10vw;
+    }
+    .connectPhone {
+        display: inline-block;
+        font-size: 6vw;
+        margin-left: 5vw;
+    }
+    /* Fin des paramétres pour le bouton connexion sous format mobile */
+    /* Paramétres pour le bouton demande de devis */
+    #quotePhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+    }
+    /* Paramétres pour le bouton prise de rendez-vous */
+    #appointmentPhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+    }
+    /* Paramétres pour le bouton tarifs */
+    #pricesPhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+    }
+    /* Paramétre pour cacher le bouton connexion */
+    #connectPhone {
+        display: none;
+    }
+    /* Paramétre pour les mentions légales */
+    #MentionMobil {
+        display: block;
+    }
+    /* Paramétre pour le titre de la page devis */
+    .titleQuotePhone {
+        margin-top: 5vw;
+        font-size: 9vw;
+        margin-right: 4vw;
+        margin-left: 3vw;
+        margin-bottom: 5vw;
+    }
+    /* Paramétre pour les paragraphes de la page devis sous mobile */
+    .p_quotePhone {
+        text-align: center;
+    }
+    /* Paramétres pour le titre de la page contact */
+    .H1_page_contact {
+        font-size: 10vw;
+        margin-right: 5vw;
+        margin-left: 13vw;
+        margin-bottom: 5vw;
+    }
+    /* Paramétre pour la liste */
+    .parameterLi {
+        font-size: 4vw;
+        margin-right: 10vw;
+        margin-left: 5vw;
+    }
+    /* Paramétres pour les informations de paiement*/
+    .info {
+        margin-left: 5vw;
+        white-space: nowrap;
+    }
+    /* Paramétre pour le paiement*/
+    .payment {
+        margin-right: 5vw;
+    }
+    /* Paramétre pour les mentions légales */
+    #modalNotice {
+        width: 100vw;
+    }
+    /* Paramétre pour faire afficher les mention légale */
+    #noticePhone {
+        display: block;
+    }
+    /* Paramétre pour afficher le numéro siret */
+    #siretPhone {
+        display: block;
+    }
+    /* Paramétres pour la modal siret */
+    #modalSiret {
+        width: 100vw;
+        justify-content: center;
+    }
+    /* Faire disparaître la modal sous format mobile */
+    #siret {
+        display: none;
+    }
+    /* Paramétres pour l'image de carte géographique' */
+    .imgIframe {
+        width: 90vw;
+        height: 40vh;
+    }
+    /* Paramétres pour le formulaire de contact */
+    form {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    /* Paramétres pour les images de la page produit */
+    .img_product {
+        height: 40vh;
+        width: 70vw;
+        margin-left: 20vw;
+    }
+    /* Paramétre pour les titres de niveau 2 de la page produit */
+    .h2_product {
+        text-align: center;
+    }
+    /* Paramétre pour les paragraphe de la page produit */
+    .p_product {
+        text-align: center;
+    }
+    /* Paramétre pour les références produit */
+    .ref_product_phone {
+        text-align: center;
+    }
+    /* Paramétres pour le titre de niveau 1 de la page produit */
+    .h1_product {
+        text-align: center;
+        margin-right: 5vw;
+        margin-top: 5vw;
+    }
+    /* Paramétres pour les image de la page galery */
+    .img_galery {
+        width: 90%;
+    }
+    /* Paramétre pour le titre de niveau 1 de la page galerie */
+    .h1_galery {
+        font-size: 9.5vw;
+    }
 }
-#siretPhone {
-  display: block;
+ /* Média query pour les écrans entre 601px et 767px */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    /* Paramétre pour cacher des éléments */
+    .hide {
+        display: none;
+    }
+    /* Paramétres pour le titre de la page d'acceuil' */
+    .h1_accueil {
+        
+    }
+    /* Paramétres pour l'image de présentation' */
+    .parameterImg {
+        
+    }
+    /* Paramétres pour le logo facebook */
+    .parameterLogoFacebook {
+        font-size: 9vw;
+        margin-right: 7vw;
+        margin-left: 10vw;
+        margin-top: 3vw;
+    }
+    /* Paramétre pour les paragraphe et les listes */
+    .parameterP, ul {
+        font-size: 4vw;
+    }
+    /* Paramétre pour le pied de page */
+    .parameterFooter {
+        margin-bottom: 0;
+    }
+    /* Paramétres pour le titre de niveau 1 sur la page métier */
+    .h1_job {
+        font-size: 6vw;
+        margin-bottom: 5vw;
+        margin-right: 9vw;
+        margin-left: 9vw;
+    }
+    /* Paramétres pour l'image du métier */
+    .img_job {
+        height: 60vw;
+        width: 80vw;
+    }
+    /* Début des paramétres pour le bouton contact */
+    #buttonContact {
+        display: block;
+        font-size: 4vw;
+        height: 4vh;
+        margin-left: 10vw;
+        margin-right: 3vw;
+        margin-top: 3.5vw;
+    }
+    #buttonPhone {
+        display: block;
+        font-size: 5vw;
+    }
+    /* Fin des paramétres pour le bouton contact */
+    /* Paramétres pour le logo de géolocalisation */
+    .iconMaps {
+        font-size: 9vw;
+        margin-right: 7vw;
+        margin-top: 3vw;
+    }
+    /* Paramétre pour faire disparaître diverses éléments */
+    .displayNonePhone {
+        display: none;
+    }
+    /* Paramétres pour les coordonnées */
+    .coordinatedPhone {
+        width: 95vw;
+        height: auto;
+    }
+    /* Paramétre pour aligner et espacer les éléments du pied de page */
+    .flexPhone {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Paramétres pour le bouton avis */
+    #viewPhone {
+        display: block;
+        font-size: 4vw;
+        height: 4vh;
+        margin-top: 3.5vw;
+        margin-left: 6vw;
+    }
+    /* Paramétre pour la transparence de la barre de navigation */
+    .parameterNavbar {
+        background: transparent;
+    }
+    /* Paramétre pour la barre de navigation' */
+    .navPhone {
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 10vw;
+    }
+    /* Paramétre pour l'entête de page' */
+    .parameterHeader {
+        margin-top: 0;
+    }
+    /* Paramétre pour le titre "tarifs" */
+    .rate {
+        margin: auto;
+    }
+    /* Paramétre pour le paiement */
+    .payment {
+        margin-left: 8vw;
+    }
+    /* Paramétre pour les informations de paiements */
+    .info {
+        margin-left: 5vw;
+    }
+    /* Paramétre pour le bouton demande de devis */
+    #phoneQuote {
+        display: none;
+    }
+    /* Paramétre por le bouton tarifs */
+    #phonePrices {
+        display: none;
+    }
+    /* Début des paramétres pour le bouton connexion */
+    #phoneConnect {
+        display: inline-block;
+        color: black;
+        font-size: 15vw;
+        margin-top: 5vw;
+        margin-right: 10vw;
+    }
+    .connectPhone {
+        display: inline-block;
+        font-size: 6vw;
+        margin-left: 5vw;
+    }
+    /* Fin des paramétres pour le bouton connexion */
+    #quotePhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+    }
+    /* Paramétres pour le bouton prise de rendez-vous */
+    #appointmentPhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+    }
+    /* Paramétres pour le bouton tarifs */
+    #pricesPhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+    }
+    /* Paramétre pour faire disparaître le bouton connexion */
+    #connectPhone {
+        display: none;
+    }
+    /* Paramétre pour afficher les mentions légales */
+    #MentionMobil {
+        display: block;
+    }
+    /* Paramétres pour le titre de la page devis */
+    .titleQuotePhone {
+        margin-top: 5vw;
+        font-size: 9vw;
+        margin-right: 4vw;
+        margin-left: 3vw;
+        margin-bottom: 5vw;
+    }
+    /* Paramétre pour les paragraphe de la page devis */
+    .p_quotePhone {
+        text-align: center;
+    }
+    /* Paramétres pour le titre de niveau 1 de la page contact */
+    .H1_page_contact {
+        font-size: 10vw;
+        margin-right: 5vw;
+        margin-left: 13vw;
+        margin-bottom: 5vw;
+    }
+    /* Paramétres pour les listes */
+    .parameterLi {
+        font-size: 4vw;
+        margin-right: 15vw;
+    }
+    /* Paramétres pour les informations de paiement */
+    .info {
+        margin-left: 5vw;
+        white-space: nowrap;
+    }
+    /* Paramétre pour le paiement */
+    .payment {
+        margin-right: 5vw;
+    }
+    /* Paramétre pour la modal des mentions légales */
+    #modalNotice {
+        width: 100vw;
+    }
+    /* Paramétre pour afficher les mentions légales */
+    #noticePhone {
+        display: block;
+    }
+    /* Paramétre pour afficher le numéro siret */
+    #siretPhone {
+        display: block;
+    }
+    /* Paramétres de la modal du numéro siret */
+    #modalSiret {
+        width: 100vw;
+        justify-content: center;
+    }
+    /* Paramétre pour rendre invisible le numéro siret */
+    #siret {
+        display: none;
+    }
+    /* Paramétres pour l'image géographique' */
+    .imgIframe {
+        width: 90vw;
+        height: 40vh;
+    }
+    /* Paramétres pour le formulaire de contact */
+    form {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    /* Paramétres pour les images de la page produit */
+    .img_product {
+        height: 70vh;
+        width: 70vw;
+        margin-left: 20vw;
+    }
+    /* Paramétres pour les paragraphes de la page produit */
+    .p_product {
+        text-align: center;
+        width: 50vw;
+        margin-left: 30vw;
+    }
+    /* Paramétre pour les références de la page produit */
+    .ref_product {
+        padding: 0;
+    }
+    /* Paramétres pour le titre de niveau 1 de la page produit */
+    .h1_product {
+        text-align: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+       /* Paramétres pour les image de la page galery */
+   .img_galery {
+        width: 90%;
+    }
+    /* Paramétre pour le titre de niveau 1 de la page galerie */
+    .h1_galery {
+        font-size: 9.5vw;
+    }
 }
-#modalSiret {
-  width: 100vw;
-  justify-content: center;
+/* Média query pour les écrans allant de 768px à 800px */
+@media screen and (min-width: 768px) and (max-width: 820px) {
+    /* Paramétre pour cacher diverses éléments */
+    .hide {
+        display: none;
+    }
+    .h1_accueil {
+        margin-right: 1vw;
+        margin-left: 2vw;
+    }
+    .contenuAcceuil {
+        padding: 0;
+        margin-right: 20vw;
+    }
+    .contenuJob {
+        padding: 0;
+        margin-right: 20vw;
+    }
+    /* Paramétres pour le logo facebook */
+    .parameterLogoFacebook {
+        font-size: 7.5vw;
+        margin-right: 7vw;
+        margin-left: 10vw;
+        margin-top: 2vw;
+    }
+    /* Paramétres pour les paragraphe et les listes */
+    .parameterP, ul {
+        font-size: 3vw;
+    }
+    /* Paramétre pour le pied de page */
+    .parameterFooter {
+        margin-bottom: 0;
+    }
+    /* Paramétres pour le titre de niveau 1 de la page métier */
+    .h1_job {
+        font-size: 4vw;
+        margin-bottom: 5vw;
+        white-space: nowrap;
+        margin-left: 6vw;
+    }
+    /* Paramétres pour l'image du métier' */
+    .img_job {
+        height: 25vh;
+    }
+    /* Paramétres pour le bouton contact */
+    #buttonContact {
+        display: block;
+        font-size: 2.5vw;
+        height: 4.5vh;
+        margin-left: 14vw;
+        margin-right: 3vw;
+        margin-top: 2.5vw;
+    }
+    /* Paramétres pour les boutons mobile */
+    #buttonPhone {
+        display: block;
+        font-size: 5vw;
+    }
+    /* Paramétres pour l'icon géolocalisation */
+    .iconMaps {
+        font-size: 7.5vw;
+        margin-right: 7vw;
+        margin-top: 2vw;
+    }
+    /* Paramétre pour cacher diverses éléments */
+    .displayNonePhone {
+        display: none;
+    }
+    /* Paramétres pour les coordonnées */
+    .coordinatedPhone {
+        width: 95vw;
+        height: auto;
+    }
+    /* Paramétres pour aligner et espacer les éléments dans le pied de page */
+    .flexPhone {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Paramétres pour le bouton avis */
+    #viewPhone {
+        display: block;
+        font-size: 2.5vw;
+        height: 4.5vh;
+        margin-top: 2.5vw;
+        margin-left: 6vw;
+    }
+    /* Paramétre pour la transparence de la barre de navigation */
+    .parameterNavbar {
+        background: transparent;
+    }
+    /* Paramétres pour la barre de navigation */
+    .navPhone {
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 10vw;
+    }
+    /* Paramétre pour l'entête de page' */
+    .parameterHeader {
+        margin-top: 0;
+    }
+    /* Paramétre pour le titre "tarifs" */
+    .rate {
+        margin: auto;
+    }
+    /* Paramétre pour le paiement */
+    .payment {
+        margin-left: 8vw;
+    }
+    /* Paramétre pour les informations de paiement */
+    .info {
+        margin-left: 5vw;
+    }
+    /* Paramétre pour le bouton demande de devis */
+    #phoneQuote {
+        display: none;
+    }
+    /* Paramétre pour le bouton tarifs */
+    #phonePrices {
+        display: none;
+    }
+    /* Début des paramétres pour le bouton connexion */
+    #phoneConnect {
+        display: inline-block;
+        color: black;
+        font-size: 15vw;
+        margin-top: 5vw;
+        margin-right: 10vw;
+    }
+    .connectPhone {
+        display: inline-block;
+        font-size: 6vw;
+        margin-left: 5vw;
+    }
+    /* Fin des paramétres du bouton connexion */
+    #quotePhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+        margin-right: 20vw;
+    }
+    /* Paramétres pour le bouton prise de rendez-vous */
+    #appointmentPhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+        margin-right: 20vw;
+    }
+    /* Paramétres pour le bouton tarifs */
+    #pricesPhone {
+        display: block;
+        color: black;
+        margin-top: 5vw;
+        border-radius: 5vw;
+        margin-right: 20vw;
+    }
+    /* Paramétre pour cacher le bouton connexion */
+    #connectPhone {
+        display: none;
+    }
+    /* Paramétre pour faire apparaître les mentions légales */
+    #MentionMobil {
+        display: block;
+    }
+    /* Paramétres pour le titre de la page devis */
+    .titleQuotePhone {
+        margin-top: 40vw;
+        font-size: 6vw;
+        margin-right: 6vw;
+        margin-left: 3vw;
+        margin-bottom: 5vw;
+    }
+    /* Paramétre pour les paragraphes de la page devis */
+    .p_quotePhone {
+        font-size: 3vw;
+    }
+    /* Paramétres pour le titre de niveau 1 de la page contact */
+    .H1_page_contact {
+        margin-top: 40vw;
+        font-size: 6vw;
+        margin-right: 5vw;
+        margin-left: 13vw;
+        margin-bottom: 5vw;
+    }
+    /* Paramétre pour les listes */
+    .parameterLi {
+        font-size: 3vw;
+    }
+    /* Paramétres pour les informations de paiement */
+    .info {
+        margin-left: 5vw;
+        white-space: nowrap;
+    }
+    /* Paramétre pour le paiement */
+    .payment {
+        margin-right: 5vw;
+    }
+    /* Paramétre pour la modal mentions légales */
+    #modalNotice {
+        width: 100vw;
+    }
+    /* Paramétre pour afficher les mentions légales */
+    #noticePhone {
+        display: block;
+    }
+    /* Paramétre pour afficher le numéro siret */
+    #siretPhone {
+        display: block;
+    }
+    /* Paramétre pour la modal du numéro siret */
+    #modalSiret {
+        width: 100vw;
+        justify-content: center;
+    }
+    /* Paramétre pour cacher le numéro siret */
+    #siret {
+        display: none;
+    }
+    /* Paramétre pour l'image géographique' */
+    .imgIframe {
+        width: 90vw;
+        height: 40vh;
+    }
+    /* Paramétres pour le formulaire de contact */
+    form {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    /* Paramétres pour les images de la page produit */
+    .img_product {
+        height: 40vh;
+        width: 70vw;
+        margin-left: 20vw;
+    }
+    /* Paramétre pour le titre de niveau 1 de la page produit */
+    .h1_product {
+        margin-top: 40vw;
+        margin-right: 25vw;
+    }
+    /* Paramétre pour les titres de niveau 2 de la page produit */
+    .h2_product {
+     float: left;
+    }
+    /* Paramétre pour les paragraphe de la page produit */
+    .p_product {
+        text-align: center;
+    }
+    /* Paramétre pour les références des produit */
+    .ref_product {
+        padding: 0;
+        text-align: center;
+    }
+    /* Paramétres pour les images de la page produit */
+    .img_product {
+        height: 20vh;
+    }
+    /* Paramétre pour le bouton devis */
+    #quotePhone {
+        margin-top: 40vw;
+    }
 }
-.imgIframe {
-  width: 90vw;
-  height: 40vh;
-}
-form {
-  margin-right: 2vw;
-  margin-left: 2vw;
-}
-}
+/* Fin des média query */

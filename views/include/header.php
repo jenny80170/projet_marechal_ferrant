@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../views/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/views/assets/css/bootstrap.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="../views/assets/css/style.css">
-  <link rel="stylesheet" href="../views/assets/css/styleMediaQuery.css" />
+  <link rel="stylesheet" href="/views/assets/css/style.css">
+  <link rel="stylesheet" href="/views/assets/css/styleMediaQuery.css" />
   <title>Maréchal Ferrant | <?= $page ?> </title>
 </head>
 <body>
@@ -29,25 +29,28 @@
               <i id="phoneConnect" class="fa fa-user-circle-o iconConnect" aria-hidden="true"><a class="nav-link font-weight-bold text-dark connectPhone" href="../views/connexion.php">Je me connecte</a></i>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" href="../controllers/indexController.php">Accueil</a>
+              <a class="nav-link font-weight-bold text-dark" href="index.php?index=admin">Test</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" href="../controllers/descriptionController.php">Métier</a>
+              <a class="nav-link font-weight-bold text-dark" href="index.php?index=accueil">Accueil</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" id="phoneQuote" href="../controllers/devisController.php">Devis</a>
+              <a class="nav-link font-weight-bold text-dark" href="index.php?index=description">Métier</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" id="phonePrices" href="../controllers/tarifsController.php">Tarifs</a>
+              <a class="nav-link font-weight-bold text-dark" id="phoneQuote" href="index.php?index=devis">Devis</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" href="../controllers/produitsController.php">Produits</a>
+              <a class="nav-link font-weight-bold text-dark" id="phonePrices" href="index.php?index=tarifs">Tarifs</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" href="../controllers/galerieController.php">Galerie</a>
+              <a class="nav-link font-weight-bold text-dark" href="index.php?index=produits">Produits</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link font-weight-bold text-dark" id="connectPhone" href="../controllers/connexionController.php">Connexion</a>
+              <a class="nav-link font-weight-bold text-dark" href="index.php?index=galerie">Galerie</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link font-weight-bold text-dark" id="connectPhone" href="index.php?index=connexion">Connexion</a>
             </li>
           </ul>
           <!--Début de la modal mentions légales-->
@@ -132,11 +135,9 @@
             </div>
           </div>
         </div>
+      </nav>
       </div>
         <!--Fin de la modal n° siret et fin du pied de page-->
         </div>
-      </nav>
-    </div>
-    </div>
     <!--Fin de barre de navigation et fin de l'entête-->
   </header>

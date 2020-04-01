@@ -1,7 +1,7 @@
 <div class="contenu row">
-  <div class="col-xl-3 col-md-2">
+  <div class="col-md-3">
     <!--Card avec les coordonnées du client-->
-    <div class="card coordinatedPhone bg-primary text-dark text-center font-weight-bold d-inline-block mt-5 ml-3">
+    <div class="card coordinatedPhone bg-primary text-dark text-center font-weight-bold d-inline-block mt-5 ml-1">
       <div class="card-header font-weight-bold">Coordonnées</div>
       <div class="card-body">
         <p class="card-text text-dark font-weight-bold">
@@ -10,9 +10,9 @@
           <i class="fa fa-phone" aria-hidden="true"> : 06 34 30 63 43</i><br><br>
           <div class="displayNonePhone">
             <!--Bouton de contact qui au click renvoie sur un formulaire de contact-->
-            <button type="button" class="btn btn-secondary font-weight-bold" data-toggle="modal" id="buttonContact" onclick="window.location.href = '../views/contact.php';">Contactez-moi</button>
+            <button type="button" class="btn btn-secondary font-weight-bold" data-toggle="modal" id="buttonContact" onclick="window.location.href = 'index.php?index=contact';">Contactez-moi</button>
             <!--Bouton de contact qui au click renvoie sur un calendrier-->
-            <button type="button" class="btn btn-secondary font-weight-bold" data-toggle="modal" id="buttonAppointment" onclick="window.location.href = '../views/calendrier.php';">Prenez rendez-vous ici</button>
+            <button type="button" class="btn btn-secondary font-weight-bold" data-toggle="modal" id="buttonAppointment" onclick="window.location.href = 'index.php?index=calendrier';">Prenez rendez-vous ici</button>
             <!--Fin du bouton prise de rendez-vous-->
           </div>
         </p>

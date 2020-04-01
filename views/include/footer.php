@@ -1,9 +1,9 @@
 <!--Début du pied de page avec logo facebook et logo mail qui au click renvoie sur les sites dans un nouvel onglet puis les mentions légales et n° siret avec ouverture modal dés lors du click-->
-<footer id="hidePhone" class="container p-0">
-  <div class="bg-primary parameterFooter flexPhone">
-      <button type="button" class="btn btn-secondary font-weight-bold contactPhone" data-toggle="modal" id="buttonContact" onclick="window.location.href = '../views/contact.php';">Contact</button>
-        <button type="button" class="btn btn-secondary buttonComment text-center font-weight-bold" id="viewPhone" name="button">Avis</button>
-      <!--Début du logo facebook-->
+<footer id="hidePhone" class="container-fluid pr-0 pl-0 parameterFooter">
+  <div class="bg-primary flexPhone">
+      <button type="button" class="btn btn-secondary font-weight-bold contactPhone" data-toggle="modal" id="buttonContact" onclick="window.location.href = 'index.php?index=contact';">Contact</button>
+        <button type="button" class="btn btn-secondary buttonComment font-weight-bold" id="viewPhone" name="button">Avis</button>
+        <!--Début du logo facebook-->
         <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa fa-facebook-square parameterLogoFacebook font-weight-bold" aria-hidden="true"></i></a>
     <!--Fin du logo facebook-->
     <div>
@@ -13,13 +13,13 @@
     </div>
     <div class="hide">
       <!--Début du logo mail-->
-      <a href="https://outlook.live.com/owa/" target="_blank"><i class="fa fa-envelope parameterLogoMail mt-3 mr-5 font-weight-bold" aria-hidden="true"></i></a>
+      <a href="https://outlook.live.com/owa/" target="_blank"><i class="fa fa-envelope parameterLogoMail font-weight-bold" aria-hidden="true"></i></a>
     </div>
     <!--Fin du logo mail-->
     <!--Boutton d'ouverture modal-->
     <div class="d-flex justify-content-center">
       <div class="hide">
-        <button type="button" class="notice btn btn-secondary mt-3 mr-5 parameterBorderButtonFooter" data-toggle="modal">
+          <button type="button" id="notice" class="notice btn btn-secondary parameterBorderButtonFooter" data-toggle="modal">
           Mentions Légales
         </button>
       </div>
@@ -78,7 +78,7 @@
       <!--Fin de la modal mentions légales-->
       <!--Bouton d'ouverture modal-->
       <div id="hide">
-        <button type="button" class="siret btn btn-secondary mr-5 parameterBorderButtonFooter mt-3" data-toggle="modal">
+        <button type="button" id="siret" class="siret btn btn-secondary parameterBorderButtonFooter" data-toggle="modal">
           N° Siret
         </button>
       </div>
@@ -105,9 +105,9 @@
   </div>
     <!--Fin de la modal n° siret et fin du pied de page-->
   </footer>
-<script  src="../views/assets/js/jquery.js"></script>
+<script  src="/views/assets/js/jquery.js"></script>
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script  src="../views/assets/js/script.js"></script>
+<script  src="/views/assets/js/script.js"></script>
 </body>
 </html>

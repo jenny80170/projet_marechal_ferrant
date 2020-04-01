@@ -51,32 +51,33 @@ h1 {
 .parameterP, ul{
     font-size: 3vh;
     color: chocolate;
-    margin-right: 11.5vw;
 }
 /*Paramétres image carte de visite*/
 .parameterImg {
-    margin-right: 11.5vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
 }
 /*Paramétre de l'image métier*/
 .img_job {
-  margin-left: 8vw;
-  margin-bottom: 5vw;
+    margin-bottom: 5vw;
 }
+/* Paramétre du titre de niveau 1 de la page métier */
 .h1_job {
-  margin-bottom: 5vw;
-  margin-right: 25vw;
-  margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-right: 14vw;
+    margin-top: 5vw;
 }
 /*Paramétres pour la fin de page*/
 .parameterFooter {
-    height: 6vw;
-    margin-top: 5%;
     border-radius: 0.7vw;
+    font-size: 3vw;
+    margin-top: 5vw;
 }
 /*Paramétres pour les boutons de fin de page*/
 .parameterBorderButtonFooter {
     border-radius: 0.7vw;
     color: black;
+    margin-bottom: 1vw;
 }
 /*Paramétres pour le logo facebook*/
 .parameterLogoFacebook {
@@ -84,13 +85,24 @@ h1 {
     color: dimGray;
     font-size: 2.5rem;
     margin-left: 45px;
-    margin-top: 20px
+    margin-top: 0.7vw;
 }
 /*Paramétres pour le logo mail*/
 .parameterLogoMail {
     float: right;
     color: dimGray;
-    font-size: 2.5rem;</div>
+    font-size: 2.5rem;
+    margin-right: 45px;
+    margin-top: 0.5vw;
+}
+/* Paramétre pour le numéro siret */
+#siret {
+    margin-top: 0.5vw;
+}
+/* Paramétres pour les mentions légales */
+#notice {
+    margin-top: 0.5vw;
+    margin-right: 5vw;
 }
 /*Paramétre pour le bouton contact*/
 #buttonContact {
@@ -98,6 +110,7 @@ h1 {
     border-radius: 1.5vw;
     margin-bottom: 1.5vw;
     margin-top: 2.3vw;
+    font-size: 1.3vw;
 }
 /*Paramétres pour le bouton du commentaire*/
 .buttonComment {
@@ -107,10 +120,11 @@ h1 {
     margin-top: 1.5vw;
 }
 #buttonAppointment {
-  color: black;
-  border-radius: 1.5vw;
-  margin-bottom: 1.5vw;
-  margin-top: 1.5vw;
+    color: black;
+    border-radius: 1.5vw;
+    margin-bottom: 1.5vw;
+    margin-top: 1.5vw;
+    font-size: 1.3vw;
 }
 /*Paramétres pour les li de la liste*/
 .parameterLi {
@@ -125,6 +139,7 @@ h1 {
 /*Paramétre pour les bordures de l'input du formulaire*/
 .inputFormContact {
     border-radius: 0.7vw;
+    margin-right: 5vw;
 }
 /*Couleur marron foncé*/
 .colorSandyBrown{
@@ -147,52 +162,107 @@ h1 {
 .title_peru {
     color: peru;
 }
+/* Paramétres pour le titre de niveau 1 de la page accueil */
 .h1_accueil {
-  margin-right: 23vw;
+    margin-right: 15vw;
+    margin-top: 5vw;
 }
+/* Début des paramétre pour cacher les boutons */
 #buttonPhone {
-  display: none;
+    display: none;
 }
 .contactPhone {
-  display: none;
+    display: none;
 }
 #viewPhone {
-  display: none;
+    display: none;
 }
-.arount {
-  margin-right: 25vw;
+/* Fin des paramétres pour cacher les boutons */
+/* Paramétre pour le titre tarifs */
+.rate {
+    margin-right: 15vw;
 }
+/* Paramétre pour le paiement */
 .payment {
-  margin-right: 11vw;
+    margin-right: 1vw;
 }
+/* Paramétre pour les informations de paiement */
 .info {
-  margin-right: 10vw;
+    margin-right: 1vw;
 }
+/* Début de paramétres pour cacher les boutons */
 #phoneConnect {
-  display: none;
+    display: none;
 }
 #quotePhone {
-  display: none;
+    display: none;
 }
 #appointmentPhone {
-  display: none;
+    display: none;
 }
 #pricesPhone {
-  display: none;
+    display: none;
 }
 #noticePhone {
-  display: none;
+    display: none;
 }
+/* Fin des paramétres pour cacher les boutons */
+/* Paramétre pour que la barre ne soit pas transparente */
 .navPhone {
-  opacity: 1;
+    opacity: 1;
 }
+/* Paramétre pour cacher le numéro siret */
 #siretPhone {
-  display: none;
+    display: none;
 }
+/* Paramétres pour l'image géographique' */
 .imgIframe {
-  height: 90vh;
-  width: 40vw;
+    height: 90vh;
+    width: 40vw;
 }
+/* Paramétre pour le titre de la page devis */
 .title_quote {
-  margin-right: 20vw;
+    margin-right: 20vw;
+}
+/* Couleur rouge */
+.red {
+    color: red;
+}
+/* Couleur jaune */
+.yellow {
+    color: yellow;
+}
+/* Couleur orange */
+.orange {
+    color: orange;
+}
+/* Couleur noir */
+.black {
+    color: black;
+}
+/* Paramétres pour le titre de niveau 1 de la page produit */
+.h1_product {
+    margin-top: 5vw;
+    margin-right: 8vw;
+    margin-left: 5vw;
+}
+/* Paramétre pour les références produit */
+.ref_product {
+    float: right;
+    padding-left: 5vw;
+}
+/* Paramétre pour cacher les boutons */
+#quotePhone {
+    display: none;
+}
+#appointmentPhone {
+    display: none;
+}
+#pricesPhone {
+    display: none;
+}
+/* Fin des paramétres pour cacher les boutons */
+/* Paramétres pour les images de la page galery */
+.img_galery {
+    margin-left: 5vw;
 }
