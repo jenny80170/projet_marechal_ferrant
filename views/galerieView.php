@@ -2,7 +2,9 @@
 //Variable permettant de changer le titre du head
 $page = 'Galerie';
 // Insertion du header avec entête et barre de navigation
-include_once ROOT . '/views/include/header.php';
+include_once ROOT . '/views/include/header.php'; ?>
+<div class="container-fluid">
+<?php
 // Insertion du menu sur le coter gauche
 include_once ROOT . '/views/include/menu.php';
 ?>
@@ -25,6 +27,7 @@ include_once ROOT . '/views/include/menu.php';
         <img class="col-md-3 img-fluid mt-5 mb-4 img_galery p-0" src="/views/assets/img/galery/<?= $picture['pictures'] ?>"/>
         <!-- Fin de la boucle foreach -->
     <?php } ?>
+</div>
 </div>
 </div>
 <?php

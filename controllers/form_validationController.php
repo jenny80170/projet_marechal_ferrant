@@ -1,7 +1,7 @@
 <?php
 $regexName = "/^[A-Za-zéÉ][A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ]{1,12}+((-| ?)[A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ]{0,11})$/";
-$regexPhone = "/^0[3679]([0-9]{2}){4}$/";
-$regexMessage = '/^[A-Za-zéÉ][A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ]+((-| )[A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ]+)?$/';
+$regexPhone = "/^[0][3679]([0-9]{2}){4}$/";
+$regexMessage = '/^([A-Za-zéÉ][A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ])+|([A-Za-zéÉ|A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ|0-9])+([ ]){0,}$/';
 $regexZipCode = '/^([0-9]{5})$/';
 $lastname = $firstname = $numberPhone = $email = $message = $selectType = $city = $zipCode = '';
 $errors = [];
@@ -71,6 +71,17 @@ if(count($errors) == 0){
     $users->city = $city;
     $users->zipCode = $zipCode;
     $users->insertUsers(); 
+    require_once ROOT .'/vendor/autoload.php';
+    $messageToSend = 'Vous avez un message de : ' . $lastname. ' ' .$firstname. ' '
+            . '------------------------------------------------------------------------ ' . 'Voici votre message : ' .$_POST['message'].
+            ' ' .'------------------------------------------------------------------------- Tel : ' .$numberPhone .', email : ' .$email;
+
+//Requiert le fichier "smtpParameters.php" contenant les informations de connexion (constantes)
+require_once ROOT .'/models/smtpParameters.php';
+$Name = 'Vous avez reçu un message via votre site Maréchal Ferrant';
+$mailbox = 'jennifer.malleret@outlook.fr';
+$header = 'De: '. $Name . ' <' . $email . '>\r\n';
+$mail = mail('' .$mailbox,'Marechal ferrant | Voici votre message', $messageToSend, $header);
 }
 require_once ROOT .'/views/contactView.php';
 }

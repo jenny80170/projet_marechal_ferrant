@@ -1,26 +1,19 @@
 <?php
-// Alors inserer le fichier des requête SQL
-            require_once ROOT . '/models/produitsModel.php';
-              $product = new Product();
-              if (!empty ($_GET['id'])) {
-                  $id = (int) $_GET['id'];
-                              $product->id = $id;
-              }
-             
-         
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $errors = [];
-// Si mon tableau d'erreur est égale à 0
-        if (count($errors) == 0) {
-            // J'ai mis la création du produit au dessus de l'hydratation du produit avec son ID, tu me diras si ça fonctionne :D
-            $product->id = $_POST['id'];
-            $product->nameProduct =  $_POST['lastname'];
-            $product->image = $_POST['img'];
-            $product->descriptionProduct = $_POST['description'];
-            $product->updateProduct();
-        }
+require_once ROOT . '/models/produitAdminModel.php';
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+// Création d'une nouvelle classe
+$product = new Product();
+// Lancement de la méthode pour pouvoir afficher les produits
+$productList = $product->showProduct();
+// Sécurisation de l'id
+if (filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT)) {
+    // Récupération de l'id en GET
+    $id = (int) $_GET['id'];
+    // Hydratation de l'id
+    $product->id = $id;
+    // Lancement de la méthode pour pouvoir supprimer le produit
+    $product->deleteProduct();
 }
-
-            $productOne = $product->selectOneProduct();
-
+// Insertion de la page produitAminView
 require_once ROOT . '/views/produitAdminView.php';

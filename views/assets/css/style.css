@@ -246,6 +246,19 @@ h1 {
     margin-right: 8vw;
     margin-left: 5vw;
 }
+.h1_productAdmin {
+    margin-top: 5vw;
+    margin-left: 28vw;
+}
+.img_product {
+    margin-left: 6vw;
+}
+.h2_product {
+    margin-left: 6vw;
+}
+/*.p_product {
+    margin-right: 10vw;
+}*/
 /* Paramétre pour les références produit */
 .ref_product {
     float: right;
@@ -265,4 +278,82 @@ h1 {
 /* Paramétres pour les images de la page galery */
 .img_galery {
     margin-left: 5vw;
+}
+#connect {
+    margin-left: 8vw;
+}
+#registration {
+    margin-left: 13vw;
+}
+.viewAdmin {
+white-space: nowrap;
+}
+.h1_admin {
+    margin-right: 11vw;
+}
+table, td, th {
+    border: 3px solid SaddleBrown;
+    border-radius: 5px;
+    text-align: center;
+    color: DarkSlateGray;
+    margin-left: 8vw;
+    margin-right: 6vw;
+    background-image: linear-gradient(chocolate, Silver, DarkGoldenRod);
+}
+tr, th {
+    color: black;
+    font-weight: bold;
+}
+.buttonProductAdmin {
+margin-right: 5vw;
+margin-left: 12vw;
+}
+.spaceProductAdmin {
+    margin-left: 1vw;
+    white-space: nowrap;
+}
+.img_galery_admin {
+    margin-left: 20vw;
+}
+.button_galery_admin {
+    margin-left: 23.6vw;
+    white-space: nowrap;
+}
+.h1_galery_admin {
+    margin-left: 25vw;
+}
+#calendar {
+/*    margin-top: 5vw;
+    width: 65vw;
+    justify-content: center;
+    margin-right: 30vw;
+    padding: 0;*/
+}
+.h1_connect {
+    margin-top: 5vw;
+}
+.form_connect {
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+/* Paramétre pour la flêche retour*/ 
+.backArrow {
+    font-size: 4vw;
+    margin-top: 4vw;
+    margin-left: 5vw;
+}
+.descriptionProduct {
+    margin-left: 5vw;
+    white-space: nowrap;
+}
+/* Paramétre pour le H1 de la page insertProduitAdmin */
+.h1_productInsertAdmin {
+    margin-top: 5vw;
+    margin-right: 23vw;
+    margin-left: 28vw;
+    white-space: nowrap;
+}
+/* Paramétre pour le bouton ajouter de la page d'ajout d'image*/
+.addPictures {
+    margin-left: 14vw;
 }

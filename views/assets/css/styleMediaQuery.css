@@ -1,5 +1,5 @@
 /*Début des media query pour pouvoir rendre le site responsive*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 666px) {
     /* Paramétre pour cacher diverses éléments */
     .hide {
         display: none;
@@ -162,8 +162,9 @@
     .H1_page_contact {
         font-size: 10vw;
         margin-right: 5vw;
-        margin-left: 13vw;
+        margin-left: 6vw;
         margin-bottom: 5vw;
+        white-space: nowrap;
     }
     /* Paramétre pour la liste */
     .parameterLi {
@@ -235,6 +236,11 @@
         margin-right: 5vw;
         margin-top: 5vw;
     }
+    .h1_productAdmin {
+        margin-right: 5vw;
+        margin-left: 18vw;
+        white-space: nowrap;
+    }
     /* Paramétres pour les image de la page galery */
     .img_galery {
         width: 90%;
@@ -243,9 +249,55 @@
     .h1_galery {
         font-size: 9.5vw;
     }
+    /* Paramétre pour cacher les colones du tableau admin */
+table thead {
+display: none;
+}
+/* Paramétres pour le tableau et les tr admin */
+table tr{
+display: block;
+margin-bottom: 40px;
+margin-left: 3vw;
+margin-right: 3vw;
+margin-top: 5vw;
+}
+/* Paramétres pour le tableau et les td admin  */
+table td {
+display: block;
+text-align: right;
+}
+/* Paramétres pour pouvoir afficher les thead du tableau admin avec attribut data-label que l'on utilise dans les td */
+table td:before {
+content: attr(data-label);
+float: left;
+font-weight: bold;
+}
+/* Paramétres pour le titre de niveau 1 de la page admin */
+.h1_admin {
+    white-space: nowrap;
+}
+.h1_connect {
+    white-space: nowrap;
+    font-size: 8vw;
+    margin-left: 2vw;
+    margin-right: 3vw;
+}
+.spaceProductAdmin {
+    margin-bottom: 2vw;
+}
+/* Paramétre pour le H1 de la page insertProduitAdmin */
+.h1_productInsertAdmin {
+    margin-right: 15vw;
+    margin-left: 20vw;
+    white-space: nowrap;
+}
+/* Paramétre pour la flêche retour*/ 
+.backArrow {
+    font-size: 10vw;
+}
 }
  /* Média query pour les écrans entre 601px et 767px */
-@media screen and (min-width: 601px) and (max-width: 767px) {
+@media screen and (min-width: 667px) and (max-width: 767px) {
     /* Paramétre pour cacher des éléments */
     .hide {
         display: none;
@@ -260,14 +312,14 @@
     }
     /* Paramétres pour le logo facebook */
     .parameterLogoFacebook {
-        font-size: 9vw;
+        font-size: 8.6vw;
         margin-right: 7vw;
         margin-left: 10vw;
         margin-top: 3vw;
     }
     /* Paramétre pour les paragraphe et les listes */
     .parameterP, ul {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     /* Paramétre pour le pied de page */
     .parameterFooter {
@@ -288,9 +340,9 @@
     /* Début des paramétres pour le bouton contact */
     #buttonContact {
         display: block;
-        font-size: 4vw;
-        height: 4vh;
-        margin-left: 10vw;
+        font-size: 3vw;
+        height: 14.4vh;
+        margin-left: 13.5vw;
         margin-right: 3vw;
         margin-top: 3.5vw;
     }
@@ -301,7 +353,7 @@
     /* Fin des paramétres pour le bouton contact */
     /* Paramétres pour le logo de géolocalisation */
     .iconMaps {
-        font-size: 9vw;
+        font-size: 8.6vw;
         margin-right: 7vw;
         margin-top: 3vw;
     }
@@ -322,8 +374,8 @@
     /* Paramétres pour le bouton avis */
     #viewPhone {
         display: block;
-        font-size: 4vw;
-        height: 4vh;
+        font-size: 3vw;
+        height: 14.4vh;
         margin-top: 3.5vw;
         margin-left: 6vw;
     }
@@ -419,8 +471,9 @@
     .H1_page_contact {
         font-size: 10vw;
         margin-right: 5vw;
-        margin-left: 13vw;
+        margin-left: 8vw;
         margin-bottom: 5vw;
+        white-space: nowrap;
     }
     /* Paramétres pour les listes */
     .parameterLi {
@@ -469,8 +522,8 @@
     }
     /* Paramétres pour les images de la page produit */
     .img_product {
-        height: 70vh;
-        width: 70vw;
+        height: 90vh;
+        width: 50vw;
         margin-left: 20vw;
     }
     /* Paramétres pour les paragraphes de la page produit */
@@ -491,12 +544,22 @@
     }
        /* Paramétres pour les image de la page galery */
    .img_galery {
-        width: 90%;
+        width: 60%;
+        margin-left: 20vw;
     }
     /* Paramétre pour le titre de niveau 1 de la page galerie */
     .h1_galery {
-        font-size: 9.5vw;
+        font-size: 9vw;
     }
+    .spaceProductAdmin {
+    margin-bottom: 2vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+/* Paramétre pour la flêche retour*/ 
+.backArrow {
+    font-size: 12vw;
+}
 }
 /* Média query pour les écrans allant de 768px à 800px */
 @media screen and (min-width: 768px) and (max-width: 820px) {
@@ -526,10 +589,6 @@
     /* Paramétres pour les paragraphe et les listes */
     .parameterP, ul {
         font-size: 3vw;
-    }
-    /* Paramétre pour le pied de page */
-    .parameterFooter {
-        margin-bottom: 0;
     }
     /* Paramétres pour le titre de niveau 1 de la page métier */
     .h1_job {
@@ -680,12 +739,14 @@
         margin-top: 40vw;
         font-size: 6vw;
         margin-right: 5vw;
-        margin-left: 13vw;
+        margin-left: 0vw;
         margin-bottom: 5vw;
     }
     /* Paramétre pour les listes */
     .parameterLi {
         font-size: 3vw;
+        margin-right: 5vw;
+        margin-left: 2vw;
     }
     /* Paramétres pour les informations de paiement */
     .info {
@@ -735,29 +796,71 @@
     }
     /* Paramétre pour le titre de niveau 1 de la page produit */
     .h1_product {
-        margin-top: 40vw;
-        margin-right: 25vw;
+        margin-top: 5vw;
+        margin-left: 35vw;
+        white-space: nowrap;
     }
     /* Paramétre pour les titres de niveau 2 de la page produit */
     .h2_product {
-     float: left;
+     margin-left: 20vw;
     }
     /* Paramétre pour les paragraphe de la page produit */
     .p_product {
         text-align: center;
+        margin-left: 35vw;
     }
     /* Paramétre pour les références des produit */
     .ref_product {
         padding: 0;
         text-align: center;
+        margin-left: 35vw;
     }
     /* Paramétres pour les images de la page produit */
     .img_product {
-        height: 20vh;
+       height: 20vh;
+       margin-left: 42.5vw;
+    }
+    /* Paramétres pour les image de la page galery */
+   .img_galery {
+        margin-right: 10vw;
+    }
+    .h1_galery {
+        margin-right: 8vw;
+        margin-left: 12vw;
     }
     /* Paramétre pour le bouton devis */
     #quotePhone {
         margin-top: 40vw;
     }
+ /* Paramétres pour le titre de niveau 1 de la page admin */
+.h1_admin {
+    margin-left: 26vw;
+    white-space: nowrap;
+}
+.h1_connect {
+    margin-bottom: 10vw;
+    margin-top: 40vw;
+    white-space: nowrap;
+    margin-right: 5vw;
+    margin-left: 0;
+}
+.form_connect {
+margin-left: 5vw;
+}
+.spaceProductAdmin {
+    margin-bottom: 2vw;
+    margin-left: 20vw;
+}
+.backArrow {
+    font-size: 6vw;
+    margin-top: 35vw;
+}
+.h1_productInsertAdmin {
+    padding: 0;
+    margin-top: 10vw;
+    margin-right: 25vw;
+    margin-left: 20vw;
+    white-space: nowrap;
+}
 }
 /* Fin des média query */

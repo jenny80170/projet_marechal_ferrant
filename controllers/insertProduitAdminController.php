@@ -1,6 +1,7 @@
 <?php
 // Alors inserer le fichier des requête SQL
-            require_once ROOT . '/models/produitsModel.php';
+            require_once ROOT . '/models/produitAdminModel.php';
+            $errors = [];
               $product = new Product();
               if (!empty ($_GET['id'])) {
                   $id = (int) $_GET['id'];
@@ -9,16 +10,17 @@
              
          
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $errors = [];
+    if (isset($_POST['add'])) {
 // Si mon tableau d'erreur est égale à 0
         if (count($errors) == 0) {
-            // J'ai mis la création du produit au dessus de l'hydratation du produit avec son ID, tu me diras si ça fonctionne :D
-            $product->nameProduct =  $_POST['lastname'];
+            $product->nameProduct =  $_POST['name'];
             $product->image = $_POST['img'];
             $product->descriptionProduct = $_POST['description'];
+            $product->reference = $_POST['reference'];
+            $product->id_serviceType = '6';
             $product->insertProduct();
         }
         $success = true;
 }
-
+}
 require_once ROOT . '/views/insertProduitAdminView.php';

@@ -1,33 +1,52 @@
-<?php 
+<?php
+// Début de session
+session_start();
+//Variable permettant de changer le titre du head
+$page = 'Produits';
 // Insertion du header avec entête et barre de navigation
-include_once ROOT. '/views/include/header.php'; 
+include_once ROOT .'/views/include/header.php'; 
+if(isset($_GET['added'])){
+    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <p>Votre produit a bien été enregistré.</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>.';
+}
 ?>
+<!-- Insertion d'un container fluide dans une div -->
 <div class="container-fluid">
-<?php // Menu sur le coter gauche
- include_once ROOT. '/views/include/menu.php';
- ?>
-<form class="mt-5" action="index.php?index=produitAdmin" method="POST" novalidate>
-    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
-      <label for="lastname">Entrez votre nom de produit</label>
-      <input type="text" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="lastname" name="lastname" value="<?= $_POST['lastname'] ?? $productOne->nameProduct ?>">
+    <?php
+// Insertion du menu sur le coter gauche
+include_once ROOT .'/views/include/menuAdmin.php';
+if(!empty($success)){
+     echo 'Votre produit a été supprimer avec succés';
+ }
+ else { ?>
+<div class="col-md-9">
+    <h1 class="title_chocolate h1_productAdmin">Mes produits</h1>
+     <?php foreach ($productList as $products) { ?>
+    <div class="row">
+            <h2 class="col-12 text-primary mb-4 h2_product mt-5"><?= $products['nameProduct']. '</h2><img class="col-md-3 col-lg-3 img_product img-fluid mb-4" src="../views/assets/img/' .$products['image']. '"/>' ?>
+                <div class="col-lg-8">
+            <p class="parameterP p_product"><?= $products['descriptionProduct'] ?></p>
+            <p class="float-right text-primary mr-2 ref_product"><?= $products['reference'] ?></p>
+                </div>
     </div>
-    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
-      <label for="description">Entrez votre description</label>
-      <textarea name="description" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="description" rows="8" cols="80"><?= $_POST['description'] ?? $productOne->descriptionProduct ?></textarea>
-    </div>
-    <div class="form-group d-flex justify-content-center colorSandyBrown font-weight-bold">
-        <img src="/views/assets/img/ultraShieldSpray.jpg" class="img-fluid" width="100" />
-    </div>
-      <label for="img">Choisissez votre image</label>
-      <input type="hidden" name="id" value="<?= $productOne->id ?>">
-   </div>
-      <input type="file" class="formContact inputFormContact mt-4 text-white font-weight-bold" id="img" name="img" value="<?= $_POST['img'] ?? $productOne->image ?>">
-    <div class="d-flex justify-content-center colorSandyBrown font-weight-bold">
-      <input type="submit" class="formContact inputFormContact mb-3 mt-3 text-white font-weight-bold" id="envoyer" name="envoyer" value="Envoyer">
-    </div>
-    <!--Fin du formulaire de contact-->
-  </form>
+            <p>
+                <br>
+                <div class="row buttonProductAdmin">
+            <a href="index.php?index=insertProduitAdmin&id=<?= $products['id'] ?>" class="btn btn-success col-lg-3 spaceProductAdmin">Ajouter un produit</a>
+            <a href="index.php?index=produitUpdateAdmin&id=<?= $products['id'] ?>" class="btn btn-success col-lg-4 spaceProductAdmin">Modifier ce produit</a>
+            <a href="index.php?index=produitAdmin&id=<?= $products['id'] ?>" class="btn btn-danger col-lg-4 spaceProductAdmin">Supprimer ce produit</a>
+            </p>
+                </div>
+        <?php } ?>
 </div>
-<?php 
-include ROOT .'/views/include/footer.php';
+</div>
+</div>
+<?php
+ }
+// Insertion du pied de page du site
+include_once ROOT .'/views/include/footer.php';
 ?>

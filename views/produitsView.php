@@ -15,7 +15,7 @@ include_once ROOT .'/views/include/menu.php';
             <h2 class="col-12 text-primary ml-3 mb-5 mt-5 h2_product"><?= $products['nameProduct']. '</h2><img class="col-md-3 col-xl-3 img_product img-fluid mb-4" src="/views/assets/img/' .$products['image']. '"/>' ?>
         <div class="col-md-9 col-xl-9 col-sm-10">
             <p class="parameterP p_product"><?= $products['descriptionProduct'] ?></p>
-            <p class="float-right text-primary mr-2 ref_product"><?= $products['référence'] ?></p>
+            <p class="float-right text-primary mr-2 ref_product"><?= $products['reference'] ?></p>
     </div>
     </div>
         <?php } ?>

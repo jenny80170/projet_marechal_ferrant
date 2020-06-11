@@ -2,7 +2,9 @@
 //Variable permettant de changer le titre du head
 $page = 'Contact';
 // Insertion du header avec entête et barre de navigation
-require_once ROOT .'/views/include/header.php';
+require_once ROOT .'/views/include/header.php'; ?>
+<div class="container-fluid">
+<?php
 // Insertion du menu sur le coter gauche
 require_once  ROOT .'/views/include/menu.php';
 ?>
